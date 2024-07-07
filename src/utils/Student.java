@@ -1,13 +1,16 @@
 package utils;
 
+import java.util.List;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Student {
-    private String id, email; ;
+    private final String id, email;
     private String firstName, lastName;
     private Date startDate, endDate;
     private char currentSemester;
     private DegreeFaculty faculty;
+    private List <Course> coursesArray = new ArrayList<>();
 
     public Student(String id, String email, String firstName, String lastName){
         this.id=id;
@@ -16,6 +19,14 @@ public class Student {
         this.lastName=lastName;
     }
 
+    public void addToCourses(Course course) {
+        if (course!=null)
+            coursesArray.add(course);
+    }
+
+    public List<Course> getCoursesArray() {
+        return coursesArray;
+    }
 
     public String getId() {
         return id;

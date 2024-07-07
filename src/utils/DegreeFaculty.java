@@ -1,3 +1,5 @@
+package utils;
+
 public enum DegreeFaculty {
     SOFTWARE_ENGINEERING,
     ELECTRICAL_ENGINEERING,

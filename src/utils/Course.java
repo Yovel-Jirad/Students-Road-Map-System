@@ -1,3 +1,5 @@
+package utils;
+
 public class Course {
     private String courseId;
     private float coursePoints;

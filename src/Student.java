@@ -7,7 +7,7 @@ public class Student {
     private char currentSemester;
     private DegreeFaculty faculty;
 
-    Student(String id, String email, String firstName, String lastName){
+    public Student(String id, String email, String firstName, String lastName){
         this.id=id;
         this.email=email;
         this.firstName=firstName;
